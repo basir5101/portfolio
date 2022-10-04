@@ -17,7 +17,7 @@ export default function MyProjects() {
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false }}
                             transition={{ duration: 0.5 }}
                             key={index} className='border shadow-lg text-center border-indigo-900 rounded-md overflow-hidden'>
                             <Image src={project.image} height={280} width={500} alt={project.name} />

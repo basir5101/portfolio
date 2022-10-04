@@ -1,3 +1,5 @@
+import { AtSign, Facebook, GitHub, Linkedin } from "react-feather"
+
 export const projectDetails = [
     {
         id: 1,
@@ -109,4 +111,99 @@ export const blogDetails = [
         link: "https://medium.com/@basir.bsmrstu/the-10-topics-of-javascript-you-should-know-in-2020-a169185dfb28",
         des: "somThe list we are going to learn… 1. Variable (var, let) and const 2. For loop 3. Data types.....thing"
     },
+]
+
+export const completedProjects = [
+    {
+        title: 'React',
+        count: 50,
+    },
+    {
+        title: 'Next.js',
+        count: 15,
+    },
+    {
+        title: 'React-native',
+        count: 5,
+    },
+
+]
+
+export const skills = [
+    {
+        title: 'HTML5',
+        count: 80,
+    },
+    {
+        title: 'CSS3',
+        count: 78,
+    },
+    {
+        title: 'Bootstrap',
+        count: 90,
+    },
+    {
+        title: 'Tailwind css',
+        count: 95,
+    },
+    {
+        title: 'MUI',
+        count: 75,
+    },
+    {
+        title: 'JavaScript',
+        count: 75,
+    },
+    {
+        title: 'React.js',
+        count: 85,
+    },
+    {
+        title: 'Redux',
+        count: 75,
+    },
+    {
+        title: 'Framer Motion',
+        count: 75,
+    },
+    {
+        title: 'Firebase',
+        count: 40,
+    },
+    {
+        title: 'Next.js',
+        count: 90,
+    },
+    {
+        title: 'Node.js',
+        count: 40,
+    },
+    {
+        title: 'Express.js',
+        count: 35,
+    },
+
+]
+
+export const contactDetails = [
+    {
+        title: 'LinkedIn',
+        link: "https://www.linkedin.com/in/abdul-basir-b087971b1/",
+        component: <Linkedin />,
+    },
+    {
+        title: 'Github',
+        link: "https://www.linkedin.com/in/abdul-basir-b087971b1/",
+        component: <GitHub />,
+    },
+    {
+        title: 'Email',
+        link: "basir.bsmrstu@gmail.com",
+        component: <AtSign />,
+    },
+    {
+        title: 'Facebook',
+        link: "https://www.facebook.com/basir5101",
+        component: <Facebook />
+    }
 ]
