@@ -6,7 +6,7 @@ export default function CommonLayout({ children }) {
     return (
         <>
             <Navbar />
-            <main className='lg:px-12 md:px-8 px-3'> {children} </main>
+            <main className='lg:px-12 md:px-8 font-mono px-3'> {children} </main>
             <Footer />
         </>
     )

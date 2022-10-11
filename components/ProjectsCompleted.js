@@ -4,6 +4,7 @@ import React from 'react'
 import { completedProjects } from './fakeData';
 import { motion } from 'framer-motion'
 import CountUp from 'react-countup';
+import ReactVisibilitySensor from 'react-visibility-sensor';
 
 
 
@@ -18,18 +19,27 @@ export default function ProjectCompleted() {
                             initial={{ opacity: 0, scale: 0.5 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: false }}
-                            transition={{ duration: 0.5 }}
                             key={index}
 
                             className='border shadow-lg p-16 text-center border-indigo-900 rounded-md overflow-hidden'>
 
                             <h3 className='text-2xl text-indigo-800 font-semibold pt-5'>{project.title}</h3>
-                            <CountUp
-                                suffix="+"
-                                end={project.count}
-                                duration={project.count / 10}
-                                className='text-4xl text-gray-900 font-semibold pt-5'
-                            />
+                            <ReactVisibilitySensor partialVisibility offset={{ bottom: 0 }}>
+                                {
+                                    ({ isVisible }) => (
+                                        <div className='min-h-full'>
+                                            {
+                                                isVisible ? <CountUp
+                                                    suffix="+"
+                                                    end={project.count}
+                                                    duration={project.count / 20}
+                                                    className='text-4xl text-gray-900 font-semibold pt-5'
+                                                /> : <div className='text-4xl text-gray-900 font-semibold pt-5'>0</div>
+                                            }
+                                        </div>
+                                    )
+                                }
+                            </ReactVisibilitySensor>
                         </motion.div>
                     ))
                 }

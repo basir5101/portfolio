@@ -1,4 +1,4 @@
-import { AtSign, Facebook, GitHub, Linkedin } from "react-feather"
+import { AtSign, Facebook, GitHub, Linkedin, PhoneCall } from "react-feather"
 
 export const projectDetails = [
     {
@@ -190,5 +190,10 @@ export const contactDetails = [
         title: 'Facebook',
         link: "https://www.facebook.com/basir5101",
         component: <Facebook />
-    }
+    },
+    {
+        title: 'Phone',
+        link: "+8801774066225",
+        component: <PhoneCall />
+    },
 ]

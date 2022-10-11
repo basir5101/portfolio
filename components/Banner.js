@@ -20,26 +20,7 @@ const draw = {
 export default function Banner() {
     return (
         <section className='relative'>
-            <div className=" absolute ">
-                <motion.svg
-                    width="100%"
-                    height="600"
-                    viewBox="0 10 100% 30"
-                    initial="hidden"
-                    animate="visible"
-                >
-                    <motion.line
-                        x1="0"
-                        y1="170"
-                        x2="100%"
-                        y2="30"
-                        stroke="#00cc88"
-                        variants={draw}
-                        custom={2}
-                    />
-                </motion.svg>
 
-            </div>
             <div className=' grid lg:grid-cols-2 grid-cols-1 py-5'>
 
                 <motion.div
@@ -75,9 +56,11 @@ export default function Banner() {
                         style={{ fontSize: '25px' }}
                         strings={['Frontend Web Developer', 'Mobile App Developer', 'JavaScript Developer', 'React Developer']}
                         typeSpeed={40}
+                        loop={true}
                     />
 
                 </div>
+                <img className='absolute right-0 bottom-0 w-1/2' src="/coding.svg" alt="" />
             </div>
         </section>
     )
