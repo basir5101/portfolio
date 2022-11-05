@@ -73,6 +73,11 @@ export default function Navbar() {
                                 <a className='px-5 mb-2 text-lg py-1 hover:bg-indigo-800 transition bg-indigo-900 mx-2 rounded-md block'>Contact</a>
                             </Link>
                         </li>
+                        <li>
+                            <Link href={'https://docs.google.com/document/d/1uoSluP-oFOPTYPNv_fBg2LPBN1XqQjlP2D8BRo1a-I4/edit'}>
+                                <a target={'_blank'} className='px-5 mb-2 text-lg py-1 hover:bg-red-800 transition bg-red-700 mx-2 rounded-md block'>View Resume</a>
+                            </Link>
+                        </li>
                     </ul>
                 }
             </motion.nav>
