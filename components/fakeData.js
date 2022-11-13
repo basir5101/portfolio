@@ -178,7 +178,7 @@ export const contactDetails = [
     },
     {
         title: 'Github',
-        link: "https://www.linkedin.com/in/abdul-basir-b087971b1/",
+        link: "https://github.com/basir5101",
         component: <GitHub />,
     },
     {
