@@ -10,7 +10,7 @@ export default function privacyPolicy() {
                     <ol>
                         <li>
                             <h5 className='mb-0'>Introduction</h5>
-                            <p>We are committed to respecting privacy and recognize the need for appropriate protection and management of any Personal Data that is shared with us as part of using our Site. As used in this Privacy Policy, "Personal Data" means any information that may be used, either alone or in combination with other information, to personally identify an individual.</p>
+                            <p>We are committed to respecting privacy and recognize the need for appropriate protection and management of any Personal Data that is shared with us as part of using our Site. As used in this Privacy Policy, Personal Data means any information that may be used, either alone or in combination with other information, to personally identify an individual.</p>
                         </li>
                         <li>
                             <h5 className='mb-0'>Changes to this Privacy Policy</h5>
@@ -20,7 +20,7 @@ export default function privacyPolicy() {
                             <h5 className='mb-0'>Information Collected</h5>
                             <div className='mb-1'>We may receive and/or collect Personal Data in the following ways:</div>
                             <div className="ms-3">
-                                3.1. Personal Data You Provide To Us On Our Site. If you send us a "Contact Us" request or feedback, or in connection with setting up an account on our Site, or if you use any of our free tools, or when you download any of our content, you may be required to provide us with certain information that may constitute Personal Data, such as:
+                                3.1. Personal Data You Provide To Us On Our Site. If you send us a Contact Us request or feedback, or in connection with setting up an account on our Site, or if you use any of our free tools, or when you download any of our content, you may be required to provide us with certain information that may constitute Personal Data, such as:
                                 <ul>
                                     <li>Your name;</li>
                                     <li>Email address;</li>
